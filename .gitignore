@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# API Pilot local runtime files
+.venv-platform/
+.env.*
+!.env.example
+.DS_Store
+api_pilot.db
+logs/*
+!logs/.gitkeep
+reports/*
+!reports/.gitkeep

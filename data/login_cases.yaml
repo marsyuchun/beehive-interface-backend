@@ -1,0 +1,18 @@
+cases:
+  - id: login_success
+    username: admin
+    password: password123
+    expected_status: 200
+    expected_code: SUCCESS
+
+  - id: wrong_password
+    username: admin
+    password: wrong-password
+    expected_status: 401
+    expected_code: INVALID_CREDENTIALS
+
+  - id: missing_password
+    username: admin
+    expected_status: 400
+    expected_code: VALIDATION_ERROR
+

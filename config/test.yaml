@@ -1,0 +1,8 @@
+environment: test
+base_url: null
+request:
+  timeout: 5
+  headers:
+    Accept: application/json
+    User-Agent: pytest-api-framework/1.0
+
