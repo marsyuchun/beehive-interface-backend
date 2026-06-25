@@ -7,7 +7,10 @@ def test_platform_health(client):
     response = client.get("/api/v1/health")
 
     assert response.status_code == 200
-    assert response.json() == {"status": "ok", "service": "api-pilot"}
+    assert response.json() == {
+        "status": "ok",
+        "service": "beehive-interface-backend",
+    }
 
 
 def test_api_error_uses_stable_response_contract():

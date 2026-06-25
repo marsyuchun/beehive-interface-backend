@@ -8,12 +8,12 @@ from app.execution.events import ExecutionEvent, write_event
 
 
 def pytest_addoption(parser: pytest.Parser) -> None:
-    group = parser.getgroup("api-pilot")
+    group = parser.getgroup("beehive-interface-backend")
     group.addoption(
         "--platform-snapshot",
         action="store",
         dest="platform_snapshot",
-        help="Path to an immutable API Pilot run snapshot.",
+        help="Path to an immutable beehive-interface-backend run snapshot.",
     )
     group.addoption(
         "--platform-events",

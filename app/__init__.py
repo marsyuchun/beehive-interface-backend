@@ -1,1 +1,1 @@
-"""API Pilot backend application."""
+"""beehive-interface-backend application."""

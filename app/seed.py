@@ -194,7 +194,7 @@ def main() -> None:
     with SessionFactory() as session:
         result = seed_demo_data(session, settings.demo_base_url)
     print(
-        "Seeded API Pilot demo data "
+        "Seeded beehive-interface-backend demo data "
         f"(project={result.project_id}, suite={result.suite_id}, "
         f"environment={result.environment_id}, version={result.version_id})"
     )

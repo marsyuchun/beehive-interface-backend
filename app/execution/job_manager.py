@@ -62,7 +62,7 @@ class JobManager:
         self._stop_event.clear()
         self._worker = threading.Thread(
             target=self._work,
-            name="api-pilot-job-manager",
+            name="beehive-interface-backend-job-manager",
             daemon=True,
         )
         self._worker.start()

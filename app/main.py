@@ -44,7 +44,10 @@ def create_app(
 
     @application.get("/api/v1/health")
     def health() -> dict[str, str]:
-        return {"status": "ok", "service": "api-pilot"}
+        return {
+            "status": "ok",
+            "service": "beehive-interface-backend",
+        }
 
     return application
 
